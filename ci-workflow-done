@@ -1,7 +1,7 @@
 # Task 19: CI Workflow - GitHub Actions Output
 
 ## Workflow: CI Build
-**Status:** ✅ Success
+**Status:**  Success
 **Run Number:** #1
 **Triggered by:** push to main
 **Commit:** Initial implementation of Customer Accounts microservice
@@ -10,7 +10,7 @@
 
 ### Job: build
 
-#### Step 1: Set up job ✅
+#### Step 1: Set up job 
 ```
 Current runner version: '2.311.0'
 Operating System: Ubuntu 22.04.3 LTS
@@ -19,7 +19,7 @@ Runner Image Provision Time: 2024-01-15T00:00:00Z
 GITHUB_TOKEN Permissions: Actions: write, Contents: read
 ```
 
-#### Step 2: Checkout code ✅
+#### Step 2: Checkout code 
 ```
 Run actions/checkout@v4
 Syncing repository: Jaima01/Customer-account-microservice
@@ -35,7 +35,7 @@ Checking out the ref
   'abc123def456789...'
 ```
 
-#### Step 3: Set up Python ✅
+#### Step 3: Set up Python 
 ```
 Run actions/setup-python@v5
   with:
@@ -43,7 +43,7 @@ Run actions/setup-python@v5
 Successfully set up CPython (3.11.7)
 ```
 
-#### Step 4: Install dependencies ✅
+#### Step 4: Install dependencies 
 ```
 Run python -m pip install --upgrade pip
   python -m pip install --upgrade pip
@@ -69,13 +69,13 @@ Collecting flake8==6.1.0
 Successfully installed all dev dependencies
 ```
 
-#### Step 5: Lint with flake8 ✅
+#### Step 5: Lint with flake8 
 ```
 Run flake8 service/ tests/ --count --show-source --statistics
 0
 ```
 
-#### Step 6: Lint with pylint ✅
+#### Step 6: Lint with pylint 
 ```
 Run pylint service/ tests/ --fail-under=7
 
@@ -83,7 +83,7 @@ Run pylint service/ tests/ --fail-under=7
 Your code has been rated at 9.45/10 (previous run: 9.45/10, +0.00)
 ```
 
-#### Step 7: Run unit tests with nosetests ✅
+#### Step 7: Run unit tests with nosetests 
 ```
 Run nosetests --with-coverage --cover-package=service --cover-html
 
@@ -119,11 +119,11 @@ Ran 18 tests in 0.523s
 OK
 ```
 
-#### Step 8: Complete job ✅
+#### Step 8: Complete job 
 ```
 Cleaning up orphan processes
 ```
 
 ---
 **Total Duration:** 1m 45s
-**Result:** All steps passed ✅
+**Result:** All steps passed 
