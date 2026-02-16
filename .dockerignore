@@ -1,0 +1,15 @@
+.git
+.gitignore
+.github
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+coverage_html_report
+*.db
+.env
+PROJECT_INSTRUCTIONS.md
+tests/
+k8s/
+README.md
+user-story.md

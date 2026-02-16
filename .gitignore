@@ -1,0 +1,29 @@
+# Project instructions (not for version control)
+PROJECT_INSTRUCTIONS.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.env
+
+# Database
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# Coverage reports
+coverage_html_report/
+.coverage
+htmlcov/
+
+# Distribution
+dist/
+build/
+*.egg-info/
