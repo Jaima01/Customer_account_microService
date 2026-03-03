@@ -6,6 +6,7 @@ This module sets up the testing environment for the Customer Accounts service.
 import unittest
 from service import create_app, db
 
+
 class BaseTestCase(unittest.TestCase):
     """Base class for all unit tests."""
 

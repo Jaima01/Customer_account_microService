@@ -49,8 +49,8 @@ jobs:
         run: |
           pylint service/ tests/ --fail-under=7
 
-      - name: Run unit tests with nosetests
+      - name: Run unit tests with pytest
         run: |
-          nosetests --with-coverage --cover-package=service --cover-html
+          pytest --cov=service --cov-report=html
         env:
           DATABASE_URI: "sqlite:///test.db"
